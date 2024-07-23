@@ -8,5 +8,6 @@ int main()
     Inchworm worm;
     worm.lunchtime(11,2,4);
     worm.lunchtime(20,3,7);
+    //making changes to test
     return 0;
 }
