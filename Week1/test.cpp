@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "Inchworm.h"
+#include "Inchworm.hpp"
 #include <vector>
 #include <cmath>
 int main()
