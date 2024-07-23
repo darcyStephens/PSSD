@@ -1,1 +1,20 @@
 problem 1
+
+initial thoughts:
+store where the leaves in a vector
+store where the worm will rest in a vector
+compare the positions of each vector
+
+attempt:
+looks ugly, must be an easier way.
+
+more thoughts:
+one for loop, check if the mod of leaf and rest are 0. if both equal to zero, increment res.
+
+attempt:
+it works.
+
+reflection:
+don't store things unnecessarily
+
+problem 2
