@@ -22,15 +22,20 @@ problem 2 ThrowTheBall
 initial thoughts:
 draw out an example of it, can't make sense of it.
 need to track the number of times eahc player has held the ball.
-stepping through the example, once all players have passed the ball around, the ball travels in an inverse order.
-for example the ball goes, 
+stepping through the example, once all players have passed the ball around, the ball travels in the reverse order.
+for the first example where
+N = 5
+M = 3
+L = 2
+the ball goes, 
 1,4,2,5,3 then goes 3,5,2,4,1
 
 plan:
-simulate one round of passing and multiply the number of passes by M.
+simulate one round of passing and multiply the number of passes by M - 1.
+so the above example will be 5 * 2 = 10
 
 how to simulate a round:
-
+getting stuck here.
 
 
 
