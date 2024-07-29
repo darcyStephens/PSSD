@@ -31,11 +31,47 @@ the ball goes,
 1,4,2,5,3 then goes 3,5,2,4,1
 
 plan:
-simulate one round of passing and multiply the number of passes by M - 1.
+simulate one round of passing (once the ball returns to player 1) and multiply the number of passes by M - 1.
 so the above example will be 5 * 2 = 10
 
-how to simulate a round:
-getting stuck here.
+
+trying to simulate a round:
+store number of passes in a vector, each index of the vector represents a player,player one is at index of 0.
+tried to track the current player, with current player + 1. That didn't work.
+currently outputting one more pass than it should. i.e., 11 instead of 10.
+changed the condition of the return. it works now.
+
+it works, heres how:
+store the number of possessions each player has in a vector, with the index corresponding to the the player number.
+check if the player in possesion of the ball has an even or odd number of possessions
+if even, calculate currentPlayer + L (diff), if diff is greater than the number of players, 
+pass to the player at the index diff - number of players. otherwise just pass to the player at index diff.
+if odd, do the inverse of even pretty much.
+
+reflection:
+that took longer than expected but happy to get it done.
 
 
+problem 3 StreetParking
+
+initial thoughts:
+check if the value in the string is -
+if it is, check it isn't with range of S and B
+error handle for out of range.
+
+attempt:
+worked well.
+
+reflection:
+feels good to get that done quickly
+
+
+questoin 4 AzimuthMonitoring
+
+initial thoughts:
+brute force approach, have an Azimuth value, change it based on the instructions
+find the direction
+check the degree
+calculate azimuth
+repeat
 
